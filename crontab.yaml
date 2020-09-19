@@ -1,0 +1,12 @@
+jobs:
+    - name: demo
+      command: |
+        /usr/local/bin/demo
+      shell: /bin/bash
+      schedule: "0 * * * *"
+      utc: true
+      failsWhen:
+        producesStdout: false
+        producesStderr: false
+        nonzeroReturn: true
+        always: false
