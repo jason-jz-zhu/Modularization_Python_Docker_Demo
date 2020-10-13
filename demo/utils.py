@@ -29,8 +29,6 @@ def get_data(path: str) -> pd.DataFrame:
 
     return raw_df
 
-
-
 def deduplicate_data(raw_df: pd.DataFrame) -> pd.DataFrame:
     """Deduplicate data.
 
@@ -48,7 +46,6 @@ def deduplicate_data(raw_df: pd.DataFrame) -> pd.DataFrame:
     except Exception as error:
         LOG.exception(f"data: deduplicate could not be completed. {error}")
         sys.exit(1)
-
     return dedup_df
 
 def generate_metric(dedup_df: pd.DataFrame) -> pd.DataFrame:
