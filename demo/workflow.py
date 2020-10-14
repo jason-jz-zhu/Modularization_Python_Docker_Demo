@@ -43,7 +43,9 @@ def demo_workflow():
     config = configparser.ConfigParser()
     config.read('/demo/config/demo.cfg')
     path = config['project_info']['data_path']
-    LOG.info("get data path from config: begin")
+    # path = '/demo/data/demo.csv'
+    # print(path)
+    LOG.info("get data path from config: end")
     
     pipeline.run(path)
     end = time.time()
