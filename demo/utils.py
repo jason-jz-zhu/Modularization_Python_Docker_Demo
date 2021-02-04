@@ -69,3 +69,7 @@ def generate_metric(dedup_df: pd.DataFrame) -> pd.DataFrame:
     except Exception as error:
         LOG.exception(f"data: generate_metric could not be completed. {error}")
     return metric_df
+
+
+def print_demo(s: str):
+    print(s)

@@ -1,0 +1,3 @@
+docker image build -t demo:latest .
+docker run -d --name demo_app demo:latest
+docker exec -it demo_app bash
